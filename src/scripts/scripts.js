@@ -1,0 +1,2 @@
+import 'slick-carousel';
+

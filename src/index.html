@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Darzovija</title>
+    <meta name="Darzovija" content="Darzoviu parduotuve">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="d-flex flex-grow-1">
+          <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" alt="Darzovija">
+          </a>
+          <div class="w-100 text-right">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+      </div>
+      <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+          <ul class="navbar-nav ml-auto flex-nowrap">
+              <li class="nav-item">
+                  <a href="#" class="nav-link">APIE</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">STRAIPSNIAI</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">KONTAKTAI</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">
+                      <i class="devicon-facebook-plain"></i>
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <div id="banner">
+        <div class="row pt-5 px-5 " id="banner-logo-div">
+                <img class="img-fluid mx-auto" src="assets/images/logo-main.png" alt="Darzovija">  
+        </div>  
+         
+        
+
+  </div>
+  
+    <div class="slick">
+            <div>
+                <img class="mx-auto img-fluid slick-items" src="./assets/images/pomidoras-banner.png" alt="Pomidoras 1">
+            </div>
+            <div>
+                <img class="mx-auto img-fluid slick-items" src="./assets/images/pomidoras-banner.png" alt="Pomidoras 1">
+            </div>
+    </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+    
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  $('.slick').slick(
+    {           arrows: true,
+                dots: true,
+                infinite: true,
+                speed: 500,
+                autoplay: true,
+                slidesToShow: 1,
+                slidesToScroll: 1}
+  );
+});</script>
+  </body>
+
+</html>

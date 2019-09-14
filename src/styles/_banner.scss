@@ -1,0 +1,51 @@
+
+#banner {
+    height: 50vh;
+    @include md{
+        height: 60vh;
+    }
+    @include lg{
+        height: 80vh;
+    }
+    //background-image: url("../assets/images/banner-bg.png");
+    background-image: linear-gradient(180deg, rgba(255, 4, 23, 0.705) 0%, rgba(240, 4, 4, 0.884) 100%), url("../assets/images/banner-bg.png");
+    background-size: cover;
+    // -webkit-border-radius: 0 0 100% 100%;
+    // -moz-border-radius: 0 0 100% 100%;
+    border-radius: 0 0 100% 100%;
+    top: 0px;
+    left: 0px;
+    background-position: center center;  
+    z-index: -1;
+    #banner-logo-div {
+        z-index: 1;
+    }
+    
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.slick {
+    position: absolute!important;
+    top: 25%;
+    
+    .slick-items {
+        width: 70%;
+        height: 70%;
+        @include md{
+            width: 70%;
+            height: 70%;
+        }
+        @include lg{
+            width: 60%;
+            height: 60%;
+        }
+    }
+    width: 70%;
+    margin-left: 15%;
+}
+
+
+
+
