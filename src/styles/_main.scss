@@ -1,0 +1,36 @@
+html,body
+{
+    width: 100%!important;
+    margin: 0px!important;
+    padding: 0px!important;
+    overflow-x: hidden!important; 
+    background-color: rgb(241, 241, 241);
+    h1
+    {
+    color: $text-purple;
+    font-weight: 700;
+    }
+
+    p
+    {
+        color: $text-grey;
+    }
+    span
+    {
+        color: $text-purple;
+    }
+    h2
+    {
+        color: $text-purple;
+        font-weight: 550;
+    }
+    
+}
+#content-container {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.larger-text 
+{
+    font-size: 1.4em;
+}
