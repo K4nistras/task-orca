@@ -10,7 +10,6 @@ html,body
     color: $text-purple;
     font-weight: 700;
     }
-
     p
     {
         color: $text-grey;
@@ -26,11 +25,15 @@ html,body
     }
     
 }
+
 #content-container {
     padding-left: 15%;
     padding-right: 15%;
 }
+
 .larger-text 
 {
     font-size: 1.4em;
 }
+
+

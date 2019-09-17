@@ -41,9 +41,42 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-        test: /\.(js)$/,
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              disable: true,
+              mozjpeg: {
+                progressive: true,
+                quality: 65
+              },
+              // optipng.enabled: false will disable optipng
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                quality: [0.65, 0.90],
+                speed: 1
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+              // the webp option will enable WEBP
+              webp: {
+                quality: 10
+              }
+            }
+          },
+        ],
+      },
+     
+      {
+        test: /\.(js)$/i,
         exclude: /node_modules/,
-        use: 'babel-loader'
+        use: 'babel-loader',
+        
       },
       {
         test: /\.scss/,
