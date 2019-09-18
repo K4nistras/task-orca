@@ -1,0 +1,13 @@
+#info-text-block 
+{
+    border: 3px solid rgba(122, 122, 122, 0.438);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    color: $text-grey;
+    @include rwd(1600) {
+        position: relative;
+        right: 7rem;
+    }
+    
+}

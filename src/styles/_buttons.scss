@@ -1,6 +1,14 @@
 .btn-outline-primary:hover {
     background-color: #5200240c!important;
 }
-.btn-outline-primary {
+.btn-outline-primary, .btn {
     border-color: $text-purple!important;
+    border-radius: 15px;
+}
+.button-text-daugiau {
+    font-size: 1.2rem;
+    font-weight: 600!important;
+    @include rwd(550) {
+        font-size: 1.5rem;
+    }
 }

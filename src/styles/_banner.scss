@@ -1,11 +1,21 @@
 
 #banner {
     height: 50vh;
+    @media (orientation: landscape) {
+        height: 110vh;
+    }
     @include md{
         height: 60vh;
+        @media (orientation: landscape) {
+            height: 110vh;
+        }
     }
     @include lg{
         height: 80vh;
+        @media (orientation: landscape) {
+            height: 110vh;
+        }
+        
     }
     //background-image: url("../assets/images/banner-bg.png");
     background-image: linear-gradient(180deg, rgba(255, 4, 23, 0.705) 0%, rgba(240, 4, 4, 0.884) 100%), url("../assets/images/banner-bg.png");
