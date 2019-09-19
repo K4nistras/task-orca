@@ -13,41 +13,35 @@
 </head>
 
 <body>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-    <div class="d-flex flex-grow-1">
-      <span class="w-100 d-lg-none d-block">
-        <!-- hidden spacer to center brand on mobile --></span>
-      <a class="navbar-brand" href="#">
-        <img src="assets/images/logo.png" alt="Darzovija">
-      </a>
-      <div class="w-100 text-right">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </div>
-    <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
-      <ul class="navbar-nav ml-auto flex-nowrap">
-        <li class="nav-item">
-          <a href="#" class="nav-link">APIE</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">STRAIPSNIAI</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">KONTAKTAI</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="devicon-facebook-plain"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <header>
+        <nav>
+           <div class="menu-icon">
+              <img src="./assets/svg/hamburger-menu.svg" alt="" height="50px" width="50px">
+           </div>
+           <div class="logo">
+             <a href="#">
+               <img src="./assets/images/logo.png" alt="navbar logo image">
+             </a>
+           </div>
+           <div class="menu">
+              <ul>
+                 <li><a href="#"><strong>APIE</strong></a></li>
+                 <li><a href="#"><strong>STRAIPSNIAI</strong></a></li>
+                 <li><a href="#"><strong>KONTAKTAI</strong></a></li>
+                 <li><svg class="svg-icon-circle" style="bottom: 0!important; fill:rgba(255, 255, 255, 0.4)" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="90" stroke-width="7.5">
+                      <img class="svg-icons" width="50px" height="50px" src="./assets/svg/facebook.svg"
+                        alt="envelope-svg-contacts">
+                    </circle>
+                  </svg></li>
+
+              </ul>
+           </div>
+        </nav>
+     </header>
   <div id="banner">
     <div class="row pt-5 px-5 " id="banner-logo-div">
-      <img class="img-fluid mx-auto" src="assets/images/logo-main.png" alt="Darzovija">
+      <img class="img-fluid mx-auto d-none d-xl-flex" src="assets/images/logo-main.png" alt="Darzovija">
     </div>
   </div>
 

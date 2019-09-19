@@ -3,22 +3,20 @@
     height: 50vh;
     @media (orientation: landscape) {
         height: 110vh;
-    }
-    @include md{
-        height: 60vh;
-        @media (orientation: landscape) {
-            height: 110vh;
+        @include lg {
+            height: 80vh;
         }
     }
-    @include lg{
-        height: 80vh;
-        @media (orientation: landscape) {
-            height: 110vh;
+    
+    @media (orientation: portrait) {
+        @include lg{
+            height: 30vh;
         }
+    }
         
-    }
+    
     //background-image: url("../assets/images/banner-bg.png");
-    background-image: linear-gradient(180deg, rgba(255, 4, 23, 0.705) 0%, rgba(240, 4, 4, 0.884) 100%), url("../assets/images/banner-bg.png");
+    background-image: linear-gradient(180deg, rgba(255, 4, 4, 0.605) 0%, rgba(240, 4, 4, 0.784) 100%), url("../assets/images/banner-bg.png");
     background-size: cover;
     // -webkit-border-radius: 0 0 100% 100%;
     // -moz-border-radius: 0 0 100% 100%;
@@ -29,6 +27,20 @@
     z-index: -1;
     #banner-logo-div {
         z-index: 1;
+        @media (orientation: portrait) {
+            padding-top: 20%!important;
+        }
+        @media (orientation: landscape) {
+            padding-left: 20%!important;
+            padding-right: 20%!important;
+        }
+        
+        @include md {
+            padding-top: 10%!important;
+        }
+        @include lg {
+            padding-top: 5%!important;
+        }
     }
     
 }
@@ -38,7 +50,30 @@
 }
 .slick {
     position: absolute!important;
-    top: 25%;
+    
+      
+    @media (orientation: landscape) {
+        top: 50%;
+        @include md {
+            top: 20%;
+        }
+        @include lg {
+            top: 30%;
+        }
+        @include xl {
+            top: 23%;
+        }
+    }
+    @media (orientation: portrait) {
+        top: 20%;
+        @include md {
+            top: 20%;
+        }
+        @include lg {
+            top: 15%;
+        }
+        
+    }
     
     .slick-items {
         width: 70%;
@@ -48,8 +83,8 @@
             height: 70%;
         }
         @include lg{
-            width: 60%;
-            height: 60%;
+            width: 50%;
+            height: 50%;
         }
     }
     width: 70%;
