@@ -4,7 +4,7 @@
     @media (orientation: landscape) {
         height: 110vh;
         @include lg {
-            height: 80vh;
+            height: 70vh;
         }
     }
     
@@ -16,7 +16,7 @@
         
     
     //background-image: url("../assets/images/banner-bg.png");
-    background-image: linear-gradient(180deg, rgba(255, 4, 4, 0.605) 0%, rgba(240, 4, 4, 0.784) 100%), url("../assets/images/banner-bg.png");
+    background-image: linear-gradient(180deg, rgba(255, 4, 4, 0.605) 0%, rgba(240, 4, 4, 0.784) 100%), url("../assets/images/banner-bg.webp");
     background-size: cover;
     // -webkit-border-radius: 0 0 100% 100%;
     // -moz-border-radius: 0 0 100% 100%;
@@ -26,6 +26,12 @@
     background-position: center center;  
     z-index: -1;
     #banner-logo-div {
+        @include md {
+            padding-top: 10%!important;
+        }
+        @include lg {
+            padding-top: 5%!important;
+        }
         z-index: 1;
         @media (orientation: portrait) {
             padding-top: 20%!important;
@@ -35,12 +41,7 @@
             padding-right: 20%!important;
         }
         
-        @include md {
-            padding-top: 10%!important;
-        }
-        @include lg {
-            padding-top: 5%!important;
-        }
+       
     }
     
 }
@@ -50,12 +51,16 @@
 }
 .slick {
     position: absolute!important;
-    
+    width: 70%;
+    margin-left: 15%;
       
     @media (orientation: landscape) {
         top: 50%;
+        @include sm {
+            top: 28%;
+        }
         @include md {
-            top: 20%;
+            top: 18%;
         }
         @include lg {
             top: 30%;
@@ -67,10 +72,10 @@
     @media (orientation: portrait) {
         top: 20%;
         @include md {
-            top: 20%;
+            top: 18%;
         }
         @include lg {
-            top: 15%;
+            top: 10%;
         }
         
     }
@@ -87,8 +92,7 @@
             height: 50%;
         }
     }
-    width: 70%;
-    margin-left: 15%;
+   
 }
 
 

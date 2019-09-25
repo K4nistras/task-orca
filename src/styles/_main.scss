@@ -23,6 +23,10 @@ html,body
         color: $text-purple;
         font-weight: 550;
     }
+    a:hover {
+        color: $text-yellow !important;
+        text-decoration: none;
+    }
     
 }
 

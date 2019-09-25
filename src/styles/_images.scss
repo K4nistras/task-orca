@@ -1,0 +1,8 @@
+#dar-logo 
+{
+    max-width: 50%;
+    @include lg {
+        max-width: 100%;
+    }
+
+}
