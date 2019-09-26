@@ -2,10 +2,14 @@
 #banner {
     height: 50vh;
     @media (orientation: landscape) {
-        height: 110vh;
-        @include lg {
+        height: 110vh !important;
+        @include md {
             height: 70vh;
         }
+        @include lg {
+            height: 70vh !important;
+        }
+        
     }
     
     @media (orientation: portrait) {
@@ -27,18 +31,22 @@
     z-index: -1;
     #banner-logo-div {
         @include md {
-            padding-top: 10%!important;
+            padding-top: 10% !important;
         }
         @include lg {
-            padding-top: 5%!important;
+            padding-top: 5% !important;
         }
         z-index: 1;
         @media (orientation: portrait) {
-            padding-top: 20%!important;
+            padding-top: 20% !important;
+            @include lg 
+            {
+                padding-top: 8% !important;
+            }
         }
         @media (orientation: landscape) {
-            padding-left: 20%!important;
-            padding-right: 20%!important;
+            padding-left: 20% !important;
+            padding-right: 20% !important;
         }
         
        
@@ -55,7 +63,7 @@
     margin-left: 15%;
       
     @media (orientation: landscape) {
-        top: 50%;
+        top: 35%;
         @include sm {
             top: 28%;
         }
@@ -66,7 +74,7 @@
             top: 30%;
         }
         @include xl {
-            top: 23%;
+            top: 18%;
         }
     }
     @media (orientation: portrait) {

@@ -7,12 +7,14 @@ html,body
     background-color: rgb(241, 241, 241);
     h1
     {
-    color: $text-purple;
-    font-weight: 700;
+        color: $text-purple;
+        font-weight: 700;
     }
     p
     {
         color: $text-grey;
+        font-size: 16px;
+        font-weight: 510;
     }
     span
     {
@@ -40,4 +42,23 @@ html,body
     font-size: 1.4em;
 }
 
+#apie:target, #kontaktai:target, #straipsniai {
+    padding-top: 92px !important; 
+    margin-top: -92px !important;
+}
+
+#card, #kontaktai, #straipsniai 
+{
+    pointer-events: none !important;
+    > * {
+        pointer-events: all;
+    }
+}
+
+.card:hover {
+    cursor: pointer;
+    span {
+        color: $text-yellow !important;
+    }
+}
 

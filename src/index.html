@@ -13,6 +13,7 @@
 </head>
 
 <body>
+<!-- SECTION navbar BEGINS -->
     <header>
         <nav>
            <div class="menu-icon">
@@ -38,7 +39,11 @@
               </ul>
            </div>
         </nav>
-     </header>
+    </header>
+<!-- !SECTION navbar ENDS -->
+   
+
+<!-- SECTION banner-carousel BEGINS -->
   <div id="banner">
     <div class="row pt-5 px-5 " id="banner-logo-div">
       <img class="img-fluid mx-auto d-none d-xl-flex" src="assets/images/logo-main.webp" alt="Darzovija">
@@ -53,10 +58,11 @@
       <img class="mx-auto img-fluid slick-items" src="./assets/images/pomidoras-banner.webp" alt="Pomidoras 1">
     </div>
   </div>
+<!-- !SECTION banner-carousel END -->
 
 
   <div id="content-container">
-
+<!-- SECTION interactive-info pictures BEGINS -->
     <div class="text-center mx-auto py-3 my-3">
       <h1>MĖGAUKITĖS, UŽAUGINSIME DAR!</h1>
     </div>
@@ -80,8 +86,10 @@
         <img class="img-fluid text-center d-none d-xl-flex" src="./assets/images/agurkas.webp" alt="agurko-clickable">
       </div>
     </div>
+<!-- !SECTION interactive-info pictures ENDS -->
 
 
+<!-- SECTION apie BEGINS -->
     <div class="row my-3 pt-5 row my-lg-5 py-lg-3">
       <div class="col-lg-2 text-xl-left text-center">
         <img class="img-fluid pb-3 pb-lg-0 " id="dar-logo" src="./assets/images/dar-logo.webp" alt="logo-spalvotas">
@@ -103,16 +111,16 @@
 
 
     <div id="apie" class="row py-3 my-3">
-      <div class="col-lg-6">
+      <div class="col-lg-6 pt-lg-5 pr-lg-5">
         <div class="row">
-          <img class="img-fluid p-3" width="50%" height="100%" src="./assets/images/tomatoes-garden.webp"
+          <img class="img-fluid p-3 cube-images"   src="./assets/images/pomidorai_300x290.webp"
             alt="nuotrauka">
-          <img class="img-fluid p-3" width="50%" height="100%" src="./assets/images/agurkai-garden.webp"
+          <img class="img-fluid p-3 cube-images"   src="./assets/images/agurkai-garden_300x290.webp"
             alt="nuotrauka2">
         </div>
 
         <div class="row">
-          <img class="img-fluid p-3" width="100%" src="./assets/images/siltnamis.webp" alt="nuotrauka3">
+          <img class="img-fluid p-3" id="siltnamis-image"  src="./assets/images/siltnamis_620x290.webp" alt="nuotrauka3">
         </div>
       </div>
 
@@ -121,35 +129,39 @@
           <img class="img-fluid" src="./assets/images/logo-spalvotas.webp" alt="logo-spalvotas">
         </div>
 
-        <div class="row xl-3 py-3">
+        <div class="row my-xl-3 py-3">
           <h2> nuo <span class="larger-text">2000</span>-ųjų </h2>
         </div>
 
         <div class="row">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Voluptatum ipsum placeat blanditiis alias odit laboriosam fuga dolorem doloremque? Dolores et fugit iusto
-          cumque vitae veritatis.
-          Dicta nostrum consectetur eligendi accusamus.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Voluptatum ipsum placeat blanditiis alias odit laboriosam fuga dolorem doloremque? Dolores et fugit iusto
-          cumque vitae veritatis.
-          Dicta nostrum consectetur eligendi accusamus.
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatum ipsum placeat blanditiis alias odit laboriosam fuga dolorem doloremque? Dolores et fugit iusto
+            cumque vitae veritatis.
+            Dicta nostrum consectetur eligendi accusamus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatum ipsum placeat blanditiis alias odit laboriosam fuga dolorem doloremque? Dolores et fugit iusto
+            cumque vitae veritatis.
+            Dicta nostrum consectetur eligendi accusamus.
+          </p>
         </div>
-          <div class="row my-xl-3 py-3 d-lg-none d-xl-block">
+          <div class="row py-xl-3 my-xl-3 py-3 d-lg-none d-xl-block">
           <h2>virš <span class="larger-text">10</span> ha ploto šiltnamiai</h2>
         </div>
 
         <div class="row d-lg-none d-xl-block">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Voluptatum ipsum placeat blanditiis alias odit laboriosam fuga dolorem doloremque? Dolores et fugit iusto
-          cumque vitae veritatis.
-          Dicta nostrum consectetur eligendi accusamus.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Voluptatum ipsum placeat blanditiis alias odit laboriosam fuga dolorem doloremque? Dolores et fugit iusto
-          cumque vitae veritatis.
-          Dicta nostrum consectetur eligendi accusamus.
+           <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum ipsum placeat blanditiis alias odit laboriosam fuga dolorem doloremque? Dolores et fugit iusto
+                cumque vitae veritatis.
+                Dicta nostrum consectetur eligendi accusamus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum ipsum placeat blanditiis alias odit laboriosam fuga dolorem doloremque? Dolores et fugit iusto
+                cumque vitae veritatis.
+                Dicta nostrum consectetur eligendi accusamus.
+           </p>
         </div>
-        <div class="row mt-xl-3 pt-3 ">
+        <div class="row mt-xl-5 pt-3 ">
           <div class="col-4 col-md-3">
             <button type="button" class="btn btn-block btn-outline-primary shadow-none">
               <img id="youtube-svg" class="img-fluid" src="./assets/svg/youtube.svg" alt="youtube-icon-svg">
@@ -163,39 +175,41 @@
         </div>
       </div>
     </div>
+<!-- !SECTION apie ENDS -->
 
-
+<!-- SECTION straipsniai BEGINS -->
     <div id="straipsniai" class="col py-3 my-3">
       <div class="row my-2">
         <h1 class="mx-md-auto mx-lg-0">Reikia ĮKVĖPIMO?</h1>
       </div>
       <div class="row">
-        <span>Pasiimk įdėjų, kaip daržoves pagaminti skaniai ir patraukliai, o mitybą praturtinti vertingais
-          vitaminais.</span>
+        <p>
+          <span>
+            Pasiimk įdėjų, kaip daržoves pagaminti skaniai ir patraukliai, o mitybą praturtinti vertingais
+            vitaminais.
+          </span>
+        </p>
       </div>
       <div class="row pt-5 ">
 
         <div class="card mx-auto my-3" style="width: 25rem;">
           <img src="assets/images/stock-image.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <p class="card-text"><span>LOREM IPSUM DOLOR, SIT AMET CONSECTETUR ADIPISICING ELIT.</span></p>
           </div>
         </div>
-
+        
         <div class="card mx-auto my-3 d-none d-xl-block " style="width: 25rem;">
           <img src="assets/images/stock-image.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <p class="card-text"><span>LOREM IPSUM DOLOR, SIT AMET CONSECTETUR ADIPISICING ELIT.</span></p>
           </div>
         </div>
 
         <div class="card mx-auto my-3 d-none d-xl-block" style="width: 25rem;">
           <img src="assets/images/stock-image.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <p class="card-text"><span>LOREM IPSUM DOLOR, SIT AMET CONSECTETUR ADIPISICING ELIT.</span></p>
           </div>
         </div>
 
@@ -206,11 +220,12 @@
         </button>
       </div>
     </div>
+<!-- !SECTION straipsniai ENDS -->
 
 
 
 
-
+<!-- SECTION kontaktai BEGINS -->
     <div id="kontaktai" class="col my-3 pt-3">
       <div class="row">
         <h1 class="mx-auto text-center">AČIŪ, KAD RENKATĖS DARŽOVIJA!</h1>
@@ -250,6 +265,7 @@
       </div>
     </div>
   </div>
+<!-- !SECTION kontaktai ENDS -->
 
 
 
