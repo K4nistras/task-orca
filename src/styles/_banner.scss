@@ -1,108 +1,122 @@
-
 #banner {
     height: 50vh;
+
     @media (orientation: landscape) {
         height: 110vh !important;
+
         @include md {
             height: 70vh;
         }
+
         @include lg {
-            height: 70vh !important;
+            height: 75vh !important;
         }
-        
+
     }
-    
+
     @media (orientation: portrait) {
-        @include lg{
+        @include lg {
             height: 30vh;
         }
     }
-        
-    
+
+
     //background-image: url("../assets/images/banner-bg.png");
-    background-image: linear-gradient(180deg, rgba(255, 4, 4, 0.605) 0%, rgba(240, 4, 4, 0.784) 100%), url("../assets/images/banner-bg.webp");
+    background-image: $background-image;
     background-size: cover;
     // -webkit-border-radius: 0 0 100% 100%;
     // -moz-border-radius: 0 0 100% 100%;
     border-radius: 0 0 100% 100%;
     top: 0px;
     left: 0px;
-    background-position: center center;  
+    background-position: center center;
     z-index: -1;
+
     #banner-logo-div {
         @include md {
             padding-top: 10% !important;
         }
+
         @include lg {
             padding-top: 5% !important;
         }
+
         z-index: 1;
+
         @media (orientation: portrait) {
             padding-top: 20% !important;
-            @include lg 
-            {
+
+            @include lg {
                 padding-top: 8% !important;
             }
         }
+
         @media (orientation: landscape) {
             padding-left: 20% !important;
             padding-right: 20% !important;
         }
-        
-       
+
+
     }
-    
+
 }
+
 .carousel-inner img {
     width: 100%;
     height: 100%;
 }
+
 .slick {
-    position: absolute!important;
+    position: absolute !important;
     width: 70%;
     margin-left: 15%;
-      
+
     @media (orientation: landscape) {
         top: 35%;
+
         @include sm {
             top: 28%;
         }
+
         @include md {
             top: 18%;
         }
+
         @include lg {
             top: 30%;
         }
+
         @include xl {
             top: 18%;
         }
     }
+
     @media (orientation: portrait) {
         top: 20%;
+
         @include md {
             top: 18%;
         }
+
         @include lg {
             top: 10%;
         }
-        
+
     }
-    
+
     .slick-items {
         width: 70%;
         height: 70%;
-        @include md{
+
+        @include md {
             width: 70%;
             height: 70%;
         }
-        @include lg{
+
+        @include lg {
             width: 50%;
             height: 50%;
         }
     }
-   
+
 }
-
-
-
-

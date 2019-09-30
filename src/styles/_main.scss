@@ -1,35 +1,36 @@
-html,body
-{
-    width: 100%!important;
-    margin: 0px!important;
-    padding: 0px!important;
-    overflow-x: hidden!important; 
-    background-color: rgb(241, 241, 241);
-    h1
-    {
+html,
+body {
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    overflow-x: hidden !important;
+    background-color: $background-color;
+
+    h1 {
         color: $text-purple;
         font-weight: 700;
     }
-    p
-    {
+
+    p {
         color: $text-grey;
         font-size: 16px;
         font-weight: 510;
     }
-    span
-    {
+
+    span {
         color: $text-purple;
     }
-    h2
-    {
+
+    h2 {
         color: $text-purple;
         font-weight: 550;
     }
+
     a:hover {
         color: $text-yellow !important;
         text-decoration: none;
     }
-    
+
 }
 
 #content-container {
@@ -37,20 +38,23 @@ html,body
     padding-right: 10%;
 }
 
-.larger-text 
-{
+.larger-text {
     font-size: 1.4em;
 }
 
-#apie:target, #kontaktai:target, #straipsniai {
-    padding-top: 92px !important; 
+#apie:target,
+#kontaktai:target,
+#straipsniai {
+    padding-top: 92px !important;
     margin-top: -92px !important;
 }
 
-#card, #kontaktai, #straipsniai 
-{
+#card,
+#kontaktai,
+#straipsniai {
     pointer-events: none !important;
-    > * {
+
+    >* {
         pointer-events: all;
     }
 }
@@ -62,3 +66,9 @@ html,body
     }
 }
 
+.card {
+    width: 18rem;
+    @include xl {
+        width: 25rem;
+    }
+}

@@ -1,9 +1,7 @@
-
 .logo {
-    line-height: 60px;
     position: fixed;
     float: left;
-    margin: 16px 46px;
+    margin: 0px 20px;
     color: #fff;
     font-weight: bold;
     font-size: 20px;
@@ -14,11 +12,11 @@ nav {
     position: fixed;
     width: 100%;
     line-height: 60px;
-    z-index: 2!important;
+    z-index: 2 !important;
 }
 
 nav ul {
-    line-height: 60px;
+    line-height: 30px;
     list-style: none;
     background: rgba(206, 0, 79, 0);
     overflow: hidden;
@@ -36,7 +34,7 @@ nav.black ul {
 
 nav ul li {
     display: inline-block;
-    padding: 16px 40px;;
+    padding: 16px 40px;
 }
 
 nav ul li a {
@@ -60,45 +58,52 @@ nav ul li a {
 @media(max-width: 867px) {
 
     .logo {
-          position: fixed;
-          top: 0;
-          margin-top: 16px;
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
     }
-    
-    
+
+
 
     nav ul {
-          max-height: 0px;
-          background: $navbar-color-secondary;
+        line-height: 80px;
+        max-height: 0px;
+        background: $navbar-color-secondary;
+        text-align: center;
     }
 
     nav.black ul {
-          background: $navbar-color-secondary;
-          
+        background: $navbar-color-secondary;
+
     }
 
     .showing {
-          max-height: 34em;
-          padding-right: 0!important;
+        max-height: 34em;
+        padding-right: 0 !important;
     }
 
     nav ul li {
-          box-sizing: border-box;
-          width: 100%;
-          padding: 24px;
-          text-align: center;
+        @media (orientation: landscape) {
+            display: inline;
+            padding: 10px;
+        }
+
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
     }
-    
+
     .menu-icon {
-          display: block;
-        
+        display: block;
+
     }
 
     nav ul li a {
         text-decoration: none;
         color: #fff;
         font-size: 1.7em;
-        
+
     }
 
 }

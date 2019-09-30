@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="lt">
 
 <head>
   <meta charset="UTF-8">
   <title>Darzovija</title>
-  <meta name="Darzovija" content="Darzoviu parduotuve">
+  <meta name="Darzovija" content="Darzoviu verslas">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
@@ -13,37 +13,38 @@
 </head>
 
 <body>
-<!-- SECTION navbar BEGINS -->
-    <header>
-        <nav>
-           <div class="menu-icon">
-              <img src="./assets/svg/hamburger-menu.svg" alt="" height="50px" width="50px">
-           </div>
-           <div class="logo">
-             <a href="#">
-               <img src="./assets/images/logo.webp" alt="navbar logo image">
-             </a>
-           </div>
-           <div class="menu">
-              <ul>
-                 <li><a href="#apie"><strong>APIE</strong></a></li>
-                 <li><a href="#straipsniai"><strong>STRAIPSNIAI</strong></a></li>
-                 <li><a href="#kontaktai"><strong>KONTAKTAI</strong></a></li>
-                 <li><a href="#"><svg class="svg-icon-circle" style="bottom: 0!important; fill:rgba(255, 255, 255, 0.4)" viewBox="0 0 200 200">
-                    <circle cx="100" cy="100" r="90" stroke-width="7.5">
-                      <img class="svg-icons" width="50px" height="50px" src="./assets/svg/facebook.svg"
-                        alt="envelope-svg-contacts">
-                    </circle>
-                  </svg></a></li>
+  <!-- SECTION navbar BEGINS -->
+  <header>
+    <nav>
+      <div class="menu-icon">
+        <img src="./assets/svg/hamburger-menu.svg" alt="hamburger-menu-svg" height="50" width="50">
+      </div>
+      <div class="logo">
+        <a href="#">
+          <img src="./assets/images/logo.webp" alt="navbar logo image">
+        </a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a class="link" href="#apie"><strong>APIE</strong></a></li>
+          <li><a class="link" href="#straipsniai"><strong>STRAIPSNIAI</strong></a></li>
+          <li><a class="link" href="#kontaktai"><strong>KONTAKTAI</strong></a></li>
+          <li><a class="link" href="#"><svg class="svg-icon-circle"
+                style="bottom: 0!important; fill:rgba(255, 255, 255, 0.4)" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="90" stroke-width="7.5"></circle>
+              </svg>
+              <img id="svg-icon-fb" src="./assets/svg/facebook.svg"
+                alt="facebook-svg">
+            </a></li>
 
-              </ul>
-           </div>
-        </nav>
-    </header>
-<!-- !SECTION navbar ENDS -->
-   
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- !SECTION navbar ENDS -->
 
-<!-- SECTION banner-carousel BEGINS -->
+
+  <!-- SECTION banner-carousel BEGINS -->
   <div id="banner">
     <div class="row pt-5 px-5 " id="banner-logo-div">
       <img class="img-fluid mx-auto d-none d-xl-flex" src="assets/images/logo-main.webp" alt="Darzovija">
@@ -58,18 +59,19 @@
       <img class="mx-auto img-fluid slick-items" src="./assets/images/pomidoras-banner.webp" alt="Pomidoras 1">
     </div>
   </div>
-<!-- !SECTION banner-carousel END -->
+  <!-- !SECTION banner-carousel END -->
 
 
   <div id="content-container">
-<!-- SECTION interactive-info pictures BEGINS -->
+    <!-- SECTION interactive-info pictures BEGINS -->
     <div class="text-center mx-auto py-3 my-3">
       <h1>MĖGAUKITĖS, UŽAUGINSIME DAR!</h1>
     </div>
     <div class="row">
 
-      <div class="col-lg-6">
-        <img class="img-fluid" src="./assets/images/pomidoras.webp" alt="pomidoro-clickable">
+      <div class="col-lg-6 text-sm-center">
+        <img class="img-fluid" id="interactive-pomidoro-logo" src="./assets/images/pomidoras.webp"
+          alt="pomidoras-interactable">
       </div>
       <div class="col-lg-6">
         <div id="info-text-block">
@@ -86,10 +88,10 @@
         <img class="img-fluid text-center d-none d-xl-flex" src="./assets/images/agurkas.webp" alt="agurko-clickable">
       </div>
     </div>
-<!-- !SECTION interactive-info pictures ENDS -->
+    <!-- !SECTION interactive-info pictures ENDS -->
 
 
-<!-- SECTION apie BEGINS -->
+    <!-- SECTION apie BEGINS -->
     <div class="row my-3 pt-5 row my-lg-5 py-lg-3">
       <div class="col-lg-2 text-xl-left text-center">
         <img class="img-fluid pb-3 pb-lg-0 " id="dar-logo" src="./assets/images/dar-logo.webp" alt="logo-spalvotas">
@@ -111,22 +113,21 @@
 
 
     <div id="apie" class="row py-3 my-3">
-      <div class="col-lg-6 pt-lg-5 pr-lg-5">
+      <div class="col-xl-6 pt-lg-5 pr-lg-5">
         <div class="row">
-          <img class="img-fluid p-3 cube-images"   src="./assets/images/pomidorai_300x290.webp"
-            alt="nuotrauka">
-          <img class="img-fluid p-3 cube-images"   src="./assets/images/agurkai-garden_300x290.webp"
+          <img class="img-fluid p-2 p-lg-3 cube-images" src="./assets/images/pomidorai_300x290.webp" alt="nuotrauka">
+          <img class="img-fluid p-2 p-lg-3 cube-images" src="./assets/images/agurkai-garden_300x290.webp"
             alt="nuotrauka2">
         </div>
 
         <div class="row">
-          <img class="img-fluid p-3" id="siltnamis-image"  src="./assets/images/siltnamis_620x290.webp" alt="nuotrauka3">
+          <img class="img-fluid p-2 p-lg-3" id="siltnamis-image" src="./assets/images/siltnamis.webp" alt="nuotrauka3">
         </div>
       </div>
 
-      <div class="col-lg-6 pl-lg-5">
-        <div class="row">
-          <img class="img-fluid" src="./assets/images/logo-spalvotas.webp" alt="logo-spalvotas">
+      <div class="col-xl-6 pl-lg-5">
+        <div class="row pt-2">
+          <img class="img-fluid mx-auto mx-xl-0" src="./assets/images/logo-spalvotas.webp" alt="logo-spalvotas">
         </div>
 
         <div class="row my-xl-3 py-3">
@@ -145,21 +146,21 @@
             Dicta nostrum consectetur eligendi accusamus.
           </p>
         </div>
-          <div class="row py-xl-3 my-xl-3 py-3 d-lg-none d-xl-block">
+        <div class="row py-xl-3 my-xl-3 py-3 d-lg-none d-xl-block">
           <h2>virš <span class="larger-text">10</span> ha ploto šiltnamiai</h2>
         </div>
 
         <div class="row d-lg-none d-xl-block">
-           <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatum ipsum placeat blanditiis alias odit laboriosam fuga dolorem doloremque? Dolores et fugit iusto
-                cumque vitae veritatis.
-                Dicta nostrum consectetur eligendi accusamus.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatum ipsum placeat blanditiis alias odit laboriosam fuga dolorem doloremque? Dolores et fugit iusto
-                cumque vitae veritatis.
-                Dicta nostrum consectetur eligendi accusamus.
-           </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatum ipsum placeat blanditiis alias odit laboriosam fuga dolorem doloremque? Dolores et fugit iusto
+            cumque vitae veritatis.
+            Dicta nostrum consectetur eligendi accusamus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatum ipsum placeat blanditiis alias odit laboriosam fuga dolorem doloremque? Dolores et fugit iusto
+            cumque vitae veritatis.
+            Dicta nostrum consectetur eligendi accusamus.
+          </p>
         </div>
         <div class="row mt-xl-5 pt-3 ">
           <div class="col-4 col-md-3">
@@ -169,18 +170,18 @@
           </div>
           <div class="col">
             <button type="button" class="btn btn-block btn-outline-primary shadow-none" style="height: 100%">
-                <span class="button-text-daugiau">DAUGIAU APIE MUS</span>
+              <span class="button-text-daugiau">DAUGIAU APIE MUS</span>
             </button>
           </div>
         </div>
       </div>
     </div>
-<!-- !SECTION apie ENDS -->
+    <!-- !SECTION apie ENDS -->
 
-<!-- SECTION straipsniai BEGINS -->
+    <!-- SECTION straipsniai BEGINS -->
     <div id="straipsniai" class="col py-3 my-3">
-      <div class="row my-2">
-        <h1 class="mx-md-auto mx-lg-0">Reikia ĮKVĖPIMO?</h1>
+      <div class="row my-2 text-center">
+        <h1 class="mx-auto mx-xl-0">Reikia ĮKVĖPIMO?</h1>
       </div>
       <div class="row">
         <p>
@@ -192,22 +193,22 @@
       </div>
       <div class="row pt-5 ">
 
-        <div class="card mx-auto my-3" style="width: 25rem;">
-          <img src="assets/images/stock-image.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text"><span>LOREM IPSUM DOLOR, SIT AMET CONSECTETUR ADIPISICING ELIT.</span></p>
-          </div>
-        </div>
-        
-        <div class="card mx-auto my-3 d-none d-xl-block " style="width: 25rem;">
-          <img src="assets/images/stock-image.webp" class="card-img-top" alt="...">
+        <div class="card mx-auto my-3">
+          <img src="assets/images/stock-image.webp" class="card-img-top" alt="gallery-image">
           <div class="card-body">
             <p class="card-text"><span>LOREM IPSUM DOLOR, SIT AMET CONSECTETUR ADIPISICING ELIT.</span></p>
           </div>
         </div>
 
-        <div class="card mx-auto my-3 d-none d-xl-block" style="width: 25rem;">
-          <img src="assets/images/stock-image.webp" class="card-img-top" alt="...">
+        <div class="card mx-auto my-3 d-none d-md-block ">
+          <img src="assets/images/stock-image.webp" class="card-img-top" alt="gallery-image">
+          <div class="card-body">
+            <p class="card-text"><span>LOREM IPSUM DOLOR, SIT AMET CONSECTETUR ADIPISICING ELIT.</span></p>
+          </div>
+        </div>
+
+        <div class="card mx-auto my-3 d-none d-lg-block">
+          <img src="assets/images/stock-image.webp" class="card-img-top" alt="gallery-image">
           <div class="card-body">
             <p class="card-text"><span>LOREM IPSUM DOLOR, SIT AMET CONSECTETUR ADIPISICING ELIT.</span></p>
           </div>
@@ -220,52 +221,49 @@
         </button>
       </div>
     </div>
-<!-- !SECTION straipsniai ENDS -->
+    <!-- !SECTION straipsniai ENDS -->
 
 
 
 
-<!-- SECTION kontaktai BEGINS -->
+    <!-- SECTION kontaktai BEGINS -->
     <div id="kontaktai" class="col my-3 pt-3">
       <div class="row">
-        <h1 class="mx-auto text-center">AČIŪ, KAD RENKATĖS DARŽOVIJA!</h1>
+        <h1 class="mx-auto text-center">AČIŪ, KAD RENKATĖS DARŽOVIJĄ!</h1>
       </div>
       <div class="row">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="./assets/images/veikejai.webp" alt="..">
+        <div class="col-lg-6 text-center">
+          <img class="img-fluid" id="veikeju-image" src="./assets/images/veikejai.webp" alt="contact-image">
         </div>
         <div class="col-lg-6 pt-2 mt-1 pt-xl-5 mt-xl-5">
           <div class="pb-2">
             <p><strong>UAB "AGROŠILTNAMIAI"</strong></p>
-            <p>Imones kodas: <br> PVM kodas: <br> Adresas</p>
+            <p>Įmonės kodas: <br> PVM kodas: <br> Adresas</p>
             <p><strong>SUSISIEKITE</strong>
               <p>
           </div>
           <div class="contacts">
             <div class="row my-2">
-                <svg class="svg-icon-circle" viewBox="0 0 100 100">
-                    <circle cx="50" cy="50" r="45" stroke-width="7.5">
-                      <img class="svg-icons" width="50px" height="50px" src="./assets/svg/mobile.svg"
-                        alt="phone-svg-contacts">
-                    </circle>
-                  </svg>
-              <p><span><strong>+370 600 000</strong></span></p> 
+              <svg class="svg-icon-circle" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" stroke-width="7.5"></circle>
+              </svg>
+              <img class="svg-icons" src="./assets/svg/mobile.svg" alt="phone-svg-contacts">
+              <p><span><strong>+370 600 000</strong></span></p>
             </div>
             <div class="row my-2">
               <svg class="svg-icon-circle" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="45" stroke-width="7.5">
-                  <img class="svg-icons" width="50px" height="50px" src="./assets/svg/envelope.svg"
-                    alt="envelope-svg-contacts">
-                </circle>
+                <circle cx="50" cy="50" r="45" stroke-width="7.5"></circle>
               </svg>
-              <p><span><strong>INFO@DARZOVIJA.LT</strong></span></p> 
+              <img class="svg-icons" src="./assets/svg/envelope.svg"
+                alt="envelope-svg-contacts">
+              <p><span><strong>INFO@DARZOVIJA.LT</strong></span></p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-<!-- !SECTION kontaktai ENDS -->
+  <!-- !SECTION kontaktai ENDS -->
 
 
 
