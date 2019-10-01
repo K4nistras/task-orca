@@ -2,9 +2,11 @@
 #siltnamis-image {
     border-radius: 30px 0 0 0;
     height: 175px;
+
     @include md {
         height: 200px;
     }
+
     @include lg {
         height: 240px;
     }
@@ -13,10 +15,7 @@
         height: 290px;
     }
 
-    
-
 }
-
 
 #dar-logo {
     max-width: 100%;
@@ -24,12 +23,8 @@
 }
 
 .cube-images {
-    width: 50%;
-    @include xl {
-
-        max-width: 50%;
-    }
-
+    width: 100%;
+    padding-left: 0 !important;
 }
 
 #siltnamis-image {
@@ -38,11 +33,9 @@
 
 
 @media (orientation: landscape) {
-
     #veikeju-image,
     #interactive-pomidoro-logo {
         width: 70%;
-
         @include lg {
             width: 100%;
         }
